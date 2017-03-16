@@ -1,0 +1,53 @@
+#enada {
+    background: red;/*SEILA*/
+    width: 150px;/*SEILA*/
+    height: 150px;/*SEILA*/
+    border: 1px solid red;/*SEILA*/
+    margin-top: 5px;/*SEILA*/
+    margin-bottom: 5px;/*SEILA*/
+}
+
+body {
+    margin: 0 auto;
+    background: green;
+}
+/**
+* Comentario malucao da vida
+* Comentario malucao da vida
+* Comentario malucao da vida
+* Comentario malucao da vida
+* Comentario malucao da vida
+* Comentario malucao da vida
+* Comentario malucao da vida
+* Comentario malucao da vida
+* Comentario malucao da vida
+* Comentario malucao da vida
+* Comentario malucao da vida
+* Comentario malucao da vida
+* Comentario malucao da vida
+* Comentario malucao da vida
+*/
+*{
+    margin: 0 auto;
+}
+
+#teste {
+    border: 2px solid;
+    border-radius: 25px;
+}
+
+
+/* The animation code */
+@keyframes example {
+    from {background-color: red;}
+    to {background-color: yellow;}
+}
+
+/* The element to apply the animation to */
+div {
+    width: 100px;
+    height: 100px;
+    background-color: red;
+    animation-name: example;
+    animation-duration: 4s;
+}
