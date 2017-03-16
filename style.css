@@ -5,6 +5,8 @@
 	list-style:none;
 	vertical-align:baseline;
 }
+
+/*header*/
 header::after{
 	content: '';
 	display: block;
