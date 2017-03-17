@@ -1,0 +1,1 @@
+function validarIdade(a){return alert("BLA BLA"),a>=18}
