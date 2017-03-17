@@ -1,0 +1,35 @@
+h1{
+    color: #00a8eb;
+    text-align: center;
+    font-size: 45px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: 0;
+    margin-right: 0;
+}
+h3{
+    color: #00a8eb;
+    text-align:center;
+    font-size: 25px;
+    text-transform: uppercase;
+}
+p{
+    text-align: justify;
+    margin: 15px;
+    color: #00a8eb;
+    font-size: 20px;
+}
+.box_text_home{
+    background: #d7e5c4;
+    width: 22%;
+    height: 300px;
+    float: left;
+    margin-left: 10px;
+    margin-top: 15px;
+    margin-right: 0;
+    margin-bottom: 0;
+    padding: 10px;
+    border-radius: 300px/30px;
+    text-indent: 20px;
+    box-shadow: 5px 5px 0 #e1f9fb;
+}
