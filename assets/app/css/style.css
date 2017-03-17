@@ -37,7 +37,7 @@ header > ul {
 
 /* Main */
 .col-4 {    width: 25%;    background: #c3c3c3;    min-height: 250px;    float: left;}
-
+.colunas {margin-top: 20px;}
 /* Footer */
 footer {width: 100%; }
 .footer-copy { color:white; text-align: center; padding:10px; background:#484848;}
