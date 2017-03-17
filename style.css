@@ -4,3 +4,40 @@
 /* Footer */
 footer {width: 100%; }
 .footer-copy { color:white; text-align: center; padding:10px; background:#484848;}
+
+/* reset css*/
+*{
+	margin:0;
+	padding:0;
+	list-style:none;
+	vertical-align:baseline;
+}
+/* clear */
+header::after, section::after, div::after, footer::after{
+	content: '';
+	display: block;
+	clear: both;
+	height: 1px;
+	visibility: hidden;
+}
+
+/*header*/
+.logo img {
+    display: block;
+    margin: 10px auto;
+}
+header > ul {
+    display: inline-block;
+}
+#menu-main {
+    text-align: center;
+}
+#menu-main ul li {
+    display: inline-block;
+    padding: 10px 10px 10px 10px;
+}
+
+.container {
+    padding: 1rem 3rem 1rem 3rem;
+    margin: 0 auto;
+}
