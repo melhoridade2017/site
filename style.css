@@ -19,17 +19,25 @@ header::after, section::after, div::after, footer::after{
     display: block;
     margin: 10px auto;
 }
+h1{
+    color: #00a8eb;
+    text-align:center;
+}
 header > ul {
     display: inline-block;
 }
-#menu-main {
+#menu-main{
+    background: #9fc172;
     text-align: center;
 }
 #menu-main ul li {
     display: inline-block;
     padding: 10px 10px 10px 10px;
 }
-
+#menu-main ul li a{
+    color: #FFFFFF;
+    text-decoration:none;
+}
 .container {
     padding: 1rem 3rem 1rem 3rem;
     margin: 0 auto;
