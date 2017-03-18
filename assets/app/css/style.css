@@ -22,8 +22,19 @@ header::after, section::after, div::after, footer::after{
 header > ul {
     display: inline-block;
 }
+
+nav#menu-main a {
+    color: white;
+    text-decoration: none;
+}
+
+nav#menu-main li:hover {
+    background: #12670C;
+}
+
 #menu-main {
     text-align: center;
+    background: #447EFF;
 }
 #menu-main ul li {
     display: inline-block;
@@ -33,6 +44,12 @@ header > ul {
 .container {
     padding: 1rem 3rem 1rem 3rem;
     margin: 0 auto;
+}
+
+h1 {
+    color: #447EFF;
+    text-align: center;
+    line-height: 2;
 }
 
 /* Main */
