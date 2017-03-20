@@ -1,9 +1,10 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="pt-br">
 	<head>
 		<meta charset="utf-8">
 		<title>Quem Somos | Melhor idade</title>
 		<link rel="stylesheet" type="text/css" href="assets/css/style.css">
+		<link rel="stylesheet" type="text/css" href="assets/css/quem-somos.css"/>		
 	</head>
 	<body>
 		<header>
@@ -18,7 +19,7 @@
 					<li><a href="equipe.html">Equipe</a></li>
 					<li><a href="instalacao.html">Instalações</a></li>
 					<li><a href="blog.html">Blog</a></li>
-					<li><a href="noticias.html">Notícias</a></li>
+					<li><a href="noticias.html">Notícias</a></li>	
 					<li><a href="fotos.html">Fotos</a></li>
 					<li><a href="duvidas.html">Dúvidas</a></li>
 					<li><a href="localizacao.html">Localização</a></li>
@@ -26,10 +27,57 @@
 			</nav>
 		</header>
 		<div class="container">
-			<section class="banner">
-				
-			</section>
+			<!-- Banner Carrossel-->		
+			<!-- Imagens-->		
+			<img class="Banner" src="assets/img/casal01.jpg" style="width:100%">
+			<img class="Banner" src="assets/img/casal02.jpg" style="width:100%">
+			<img class="Banner" src="assets/img/casal03.jpg" style="width:100%">
+			<img class="Banner" src="assets/img/casal04.jpg" style="width:100%">
+			
+			<!-- Botões-->
+			<button class="display-left" onclick="plusDivs(-1)">&#10094;</button>
+			<button class="display-right" onclick="plusDivs(+1)">&#10095;</button>			
 		</div>
+		
+		<!-- JS Carossel-->
+		<script>
+		var slideIndex = 1;
+		showDivs(slideIndex);
+
+		function plusDivs(n) {
+		  showDivs(slideIndex += n);
+		}
+
+		function showDivs(n) {
+		  var i;
+		  var x = document.getElementsByClassName("Banner");
+		  if (n > x.length) {slideIndex = 1}    
+		  if (n < 1) {slideIndex = x.length}
+		  for (i = 0; i < x.length; i++) {
+		     x[i].style.display = "none";  
+		  }
+		  x[slideIndex-1].style.display = "block";  
+		}
+		</script>
+				
+			
+		<main>				
+		<article><!-- Texto colunado como um jornal. 1a. letra diferente-->
+			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Age nunc isti doceant, vel tu potius quis enim ista melius? Sed tamen est aliquid, quod nobis non liceat, liceat illis. Quo modo autem philosophus loquitur? Verum tamen cum de rebus grandioribus dicas, ipsae res verba rapiunt; Quae contraria sunt his, malane? Habes, inquam, Cato, formam eorum, de quibus loquor, philosophorum. Itaque his sapiens semper vacabit. </p>
+			<p>Nec vero alia sunt quaerenda contra Carneadeam illam sententiam. Nihil acciderat ei, quod nollet, nisi quod anulum, quo delectabatur, in mari abiecerat. Faceres tu quidem, Torquate, haec omnia; Claudii libidini, qui tum erat summo ne imperio, dederetur. At iam decimum annum in spelunca iacet. Stoicos roga. Quid enim est a Chrysippo praetermissum in Stoicis? Sed quot homines, tot sententiae; Sin tantum modo ad indicia veteris memoriae cognoscenda, curiosorum. Te enim iudicem aequum puto, modo quae dicat ille bene noris. </p>
+			<p>Ita prorsus, inquam; Duo Reges: constructio interrete. Minime vero, inquit ille, consentit. Quippe: habes enim a rhetoribus; Ergo hoc quidem apparet, nos ad agendum esse natos. Quid in isto egregio tuo officio et tanta fide-sic enim existimo-ad corpus refers? </p>
+			<p>Quamquam tu hanc copiosiorem etiam soles dicere. Ergo ita: non posse honeste vivi, nisi honeste vivatur? Dic in quovis conventu te omnia facere, ne doleas. Hanc quoque iucunditatem, si vis, transfer in animum; Hoc loco tenere se Triarius non potuit. Si quae forte-possumus. </p>
+			<p>Paulum, cum regem Persem captum adduceret, eodem flumine invectio? Maximas vero virtutes iacere omnis necesse est voluptate dominante. Eaedem enim utilitates poterunt eas labefactare atque pervertere. Tu autem negas fortem esse quemquam posse, qui dolorem malum putet. </p>
+		</article>
+					
+		<!--vídeo do youtube--> 
+		<p><center><iframe width="560" height="315" src="https://www.youtube.com/embed/S8GVQ0Sihxw?rel=0?ecver=1" frameborder="0" allowfullscreen></iframe></center></p>
+				
+		</main>
+		</div>
+
+
+
 		<footer> 
 			<div class="footer-copy">© 2017 Melhor Idade  - Todos os direitos reservados. </div>
 		</footer>
