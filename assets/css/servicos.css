@@ -1,0 +1,107 @@
+
+/*# sourceMappingURL=data:application/json;charset=utf8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IiIsImZpbGUiOiJxdWVtLXNvbW9zLmNzcyIsInNvdXJjZXNDb250ZW50IjpbXX0= */
+
+/*apenas Album*/
+ul#ap{
+  display: block;
+  width: 700PX;
+  margin: 0 auto;
+  padding: 50px;
+  left: 300px;
+  overflow: hidden;
+  list-style: none;
+  text-align: center;
+}
+
+/*propriedades do Album + itens da lista*/
+ul#ap li{
+  float: left;
+  width: 200px;
+  height: 200px;
+  margin: 10Px;
+  border: 5px solid #000000;
+  background-color: white;
+  box-shadow: 1px 3px rgba(0, 0, 0, 0.4);
+  -webkit-transition: all 0.4s ease-in;
+}
+/*apenas Album + itens do span*/
+ul#ap li span{
+  opacity: 0;
+  color: white;
+  text-shadow: 1px 1px 1px black;
+  background-color: rgba(0, 0, 0, 0.3);
+  font-size: 9pt;
+  line-height: 370px;
+  padding: 10px;
+
+}
+
+ul#ap li:hover{
+  -webkit-transform: scale(1.5);
+}
+
+ul#ap li span:hover{
+  opacity: 1;
+}
+
+/*Propriedades da imagens*/
+ul#ap li#p1{
+  background: url('../img/Servicos/cuidadocomapele.png') no-repeat;
+  background-position: 50% 50%;
+  background-size: 200px 200px;
+  background-color: #ffffff;
+}
+
+ul#ap li#p1:hover {
+  background-position: 0px 0px;
+  background-size: 200px 200px;
+}
+
+ul#ap li#p2{
+  background: url('../img/Servicos/cuidadocomasaude.png') no-repeat;
+  background-position: 50% 50%;
+  background-size: 200px 200px;
+  background-color: #ffffff;
+}
+
+ul#ap li#p2:hover {
+  background-position: 0px 0px;
+  background-size: 200px 200px;
+}
+
+ul#ap li#p3{
+  background: url('../img/Servicos/cuidadocomaalimentação.png') no-repeat;
+  background-position: 50% 50%;
+  background-size: 200px 200px;
+  background-color: #ffffff;
+}
+
+ul#ap li#p3:hover {
+  background-position: 0px 0px;
+  background-size: 200px 200px;
+}
+
+ul#ap li#p4{
+  background: url('../img/Servicos/atividadefisicaseLazer.png') no-repeat;
+  background-position: 50% 50%;
+  background-size: 200px 200px;
+  background-color: #ffffff;
+}
+
+ul#ap li#p4:hover {
+  background-position: 0px 0px;
+  background-size: 200px 200px;
+}
+
+  ul#ap li#p5{
+    background: url('../img/Servicos/transporteespecializado.png') no-repeat;
+    background-position: 50% 50%;
+    background-size: 200px 200px;
+    background-color: #ffffff;
+  }
+
+  ul#ap li#p5:hover {
+    background-position: 0px 0px;
+    background-size: 200px 200px;
+
+}
