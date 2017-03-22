@@ -2,14 +2,13 @@
 <html lang="pt-br">
     <head>
         <meta charset="utf-8">
-<<<<<<< HEAD
         <title>Fotos | Melhor idade</title>
         <link rel="stylesheet" type="text/css" href="assets/app/css/style.css">
-         <link rel="stylesheet" type="text/css" href="assets/app/css/fotos.css">
-=======
-        <title>Duvidas | Melhor idade</title>
-        <link rel="stylesheet" type="text/css" href="assets/css/style.css">
->>>>>>> fe15481dbe24d1f91da4bfc09549129bc98a4fdd
+        <link rel="stylesheet" type="text/css" href="assets/app/css/fotos.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js" type="text/javascript"></script>
+        <link rel="stylesheet" href="assets/css/prettyPhoto.css" type="text/css" media="screen" title="prettyPhoto main stylesheet" charset="utf-8" />
+        <script src="assets/js/jquery.prettyPhoto.js" type="text/javascript" charset="utf-8"></script>
+                    
     </head>
     <body>
         <header>
@@ -31,23 +30,49 @@
                 </ul>
             </nav>
         </header>
-    <div class="container">
+        <div class="container">
+            <section class="banner">
+                
+            </section>
 
             <h1>Fotos</h1>
 
             <h3>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</h3>
-            <section>
-                <div class="col-4">Foto1</div>
-                <div class="col-4">Foto2</div>
-                <div class="col-4">Foto3</div> 
-                <div class="col-4">Foto4</div>
-            </section>
             
-    </div>
+            <section class="colunas gallery clearfix">
+                <div class="col-4"><a href="assets/app/img/foto1.jpg" rel="prettyPhoto[gallery1]" title="Galeria de Fotos com compartilhamento melhor idade"><img src="assets/app/img/foto1.jpg" width="100%" height="250" alt="Melhor Idade" /></a></div>
+                <div class="col-4"><a href="assets/app/img/foto2.jpg" rel="prettyPhoto[gallery1]" title="Galeria de Fotos com compartilhamento melhor idade"><img src="assets/app/img/foto2.jpg" width="100%" height="250" alt="Melhor Idade" /></a></div>
+                <div class="col-4"><a href="assets/app/img/foto3.jpg" rel="prettyPhoto[gallery1]" title="Galeria de Fotos com compartilhamento melhor idade"><img src="assets/app/img/foto3.jpg" width="100%" height="250" alt="Melhor Idade" /></a></div>
+                <div class="col-4"><a href="assets/app/img/foto4.jpg" rel="prettyPhoto[gallery1]" title="Galeria de Fotos com compartilhamento melhor idade"><img src="assets/app/img/foto4.jpg" width="100%" height="250" alt="Melhor Idade" /></a></div>
+            </section>
+
+            
+            
+        </div>
 
         <footer> 
             <div class="footer-copy">© 2017 Melhor Idade  - Todos os direitos reservados. </div>
         </footer>
+
+        <script type="text/javascript" charset="utf-8">
+            $(document).ready(function(){
+                $("area[rel^='prettyPhoto']").prettyPhoto();
+                
+                $(".gallery:first a[rel^='prettyPhoto']").prettyPhoto({animation_speed:'normal',theme:'light_square',slideshow:3000, autoplay_slideshow: true});
+                $(".gallery:gt(0) a[rel^='prettyPhoto']").prettyPhoto({animation_speed:'fast',slideshow:10000, hideflash: true});
+        
+                $("#custom_content a[rel^='prettyPhoto']:first").prettyPhoto({
+                    custom_markup: '<div id="map_canvas" style="width:260px; height:265px"></div>',
+                    changepicturecallback: function(){ initialize(); }
+                });
+                $("#custom_content a[rel^='prettyPhoto']:last").prettyPhoto({
+                    custom_markup: '<div id="bsap_1259344" class="bsarocks bsap_d49a0984d0f377271ccbf01a33f2b6d6"></div><div id="bsap_1237859" class="bsarocks bsap_d49a0984d0f377271ccbf01a33f2b6d6" style="height:260px"></div><div id="bsap_1251710" class="bsarocks bsap_d49a0984d0f377271ccbf01a33f2b6d6"></div>',
+                    changepicturecallback: function(){ _bsap.exec(); }
+                });
+            });
+            </script>
+    
+         
 
     </body>
 </html>
