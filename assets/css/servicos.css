@@ -36,6 +36,7 @@ ul#ap li span{
 
 }
 
+/*Ação do mouse ao passar o cursor em cima da imagem*/
 ul#ap li:hover{
   -webkit-transform: scale(1.5);
 }
@@ -44,7 +45,7 @@ ul#ap li span:hover{
   opacity: 1;
 }
 
-/*Propriedades da imagens*/
+/*Propriedades da imagem 1*/
 ul#ap li#p1{
   background: url('../img/Servicos/cuidadocomapele.png') no-repeat;
   background-position: 50% 50%;
@@ -57,6 +58,7 @@ ul#ap li#p1:hover {
   background-size: 200px 200px;
 }
 
+/*Propriedade da imagem 2*/
 ul#ap li#p2{
   background: url('../img/Servicos/cuidadocomasaude.png') no-repeat;
   background-position: 50% 50%;
@@ -69,6 +71,7 @@ ul#ap li#p2:hover {
   background-size: 200px 200px;
 }
 
+/*Propriedade da imagem 3*/
 ul#ap li#p3{
   background: url('../img/Servicos/cuidadocomaalimentação.png') no-repeat;
   background-position: 50% 50%;
@@ -81,6 +84,7 @@ ul#ap li#p3:hover {
   background-size: 200px 200px;
 }
 
+/*Propriedade da imagem 4*/
 ul#ap li#p4{
   background: url('../img/Servicos/atividadefisicaseLazer.png') no-repeat;
   background-position: 50% 50%;
@@ -93,6 +97,7 @@ ul#ap li#p4:hover {
   background-size: 200px 200px;
 }
 
+  /*Propriedade da imagem 5*/
   ul#ap li#p5{
     background: url('../img/Servicos/transporteespecializado.png') no-repeat;
     background-position: 50% 50%;
@@ -103,5 +108,19 @@ ul#ap li#p4:hover {
   ul#ap li#p5:hover {
     background-position: 0px 0px;
     background-size: 200px 200px;
+
+}
+
+/*Propriedade da imagem 6*/
+ul#ap li#p6{
+  background: url('../img/Servicos/lazer.png') no-repeat;
+  background-position: 50% 50%;
+  background-size: 200px 200px;
+  background-color: #ffffff;
+}
+
+ul#ap li#p6:hover {
+  background-position: 0px 0px;
+  background-size: 200px 200px;
 
 }
