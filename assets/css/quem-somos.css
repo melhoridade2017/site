@@ -1,2 +1,22 @@
-
 /*# sourceMappingURL=data:application/json;charset=utf8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IiIsImZpbGUiOiJxdWVtLXNvbW9zLmNzcyIsInNvdXJjZXNDb250ZW50IjpbXX0= */
+
+article {
+
+  margin:10px;
+  margin-left:300px;
+  margin-right:300px;
+  -webkit-columns: 3 200px;
+     -moz-columns: 3 200px;
+          columns: 3 200px;
+}
+
+@font-face {
+    font-family: CamelotCaps;
+    src: url(camelotcaps.ttf);
+}
+
+p::first-letter {
+    font-size: 500%;
+	font-family: CamelotCaps, Arial, Helvetica, sans-serif;
+    color: #000;
+}

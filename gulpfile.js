@@ -47,4 +47,6 @@ gulp.task('default', function () {
     gulp.watch('assets/app/js/*.js', ['minify-js']);
     //IMG
     gulp.watch('assets/app/img/*.jpg', ['minify-img-jpg']);
+    gulp.watch('assets/app/img/*.png', ['minify-img-png']);
+
 });
